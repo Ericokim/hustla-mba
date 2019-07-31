@@ -1,0 +1,139 @@
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+}
+/* .NavigationItem a:hover, */
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.iconwrapper {
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+.contact {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.notify {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.book {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.arrow {
+  font-size: 23px;
+  padding-top: 9px;
+  padding-right: 12px;
+}
+
+.menu {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(1px 1px 0px);
+  position: fixed;
+  display: inline-grid;
+  right: 1%;
+  top: 6%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 4px;
+  min-height: 80px;
+  min-width: 75px;
+  margin-top: 2px;
+  width: 110px;
+  color: black;
+}
+.menu:after,
+.arrow_box:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.menu:after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -7px;
+  left: 74px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.menuitem {
+  z-index: 200;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1px;
+  list-style: none;
+  /* Top  Right  Bottom  Left */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+.item {
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px 1px 6px;
+  margin: 2px;
+  z-index: 200;
+  width: 105px;
+  height: 30px;
+  object-fit: scale-down;
+
+  transition: 0.3s;
+}
+.item:hover {
+  transform: scale(1.1);
+}
+
+.Button {
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.Button:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 500px) {
+  .NavigationItems {
+    flex-flow: row;
+  }
+}

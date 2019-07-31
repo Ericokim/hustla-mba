@@ -1,0 +1,59 @@
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ca233a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+  z-index: 90;
+  color: white;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.Logo{
+  height: 80%;
+}
+
+.toolbar-logo {
+  left: 0rem;
+  position: relative;
+}
+
+.toolbar-logo a {
+  color:  #ca233a;
+  text-decoration: none;
+  font-size: 1.5rem;
+  left: 1rem;
+}
+.logoImage {
+  width: auto;
+  height: 26px;
+}
+
+.search{
+  border-radius: 8px;
+  color: red;
+  height: 29px;
+  width: auto;
+}
+
+@media (max-width: 499px) {
+  .search {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+

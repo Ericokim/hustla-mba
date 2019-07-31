@@ -1,0 +1,23 @@
+.slide-list {
+  display: grid;
+  grid-template-columns: (auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 30px;
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
